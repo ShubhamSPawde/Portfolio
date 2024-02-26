@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham Pawade</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="img/ico-modified.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="intro">
+                <h1>Shubham Pawade</h1>
+                <h2>I'm <a href="#" class="typewrite" data-period="2000" data-type='[ "Coder ", "Developer ", "Entrepreneur " ]'>
+                        <span class="wrap"></span>
+                    </a>
+                </h2>
+
+            </div>
+            <nav>
+                <div id="myDIV">
+                    <ul class="navbar">
+                        <li class="nav-items"><a href="#" class="active">Home</a></li>
+                        <li class="nav-items"><a href="#">About</a></li>
+                        <li class="nav-items"><a href="#">Education</a></li>
+                        <li class="nav-items"><a href="#">Experience</a></li>
+                        <li class="nav-items"><a href="#">Project</a></li>
+                        <li class="nav-items"><a href="#">Skills</a></li>
+                        <li class="nav-items"><a href="#">Resume</a></li>
+                        <li class="nav-items"><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+
+            <div class="social">
+                <ul class="socialul">
+                    <li class="icons ldi"><a href="https://www.linkedin.com/in/shubhampawade/"><box-icon name='linkedin'
+                                type='logo' color='#ffffff'></box-icon></a></li>
+                    <li class="icons git"><a href="https://github.com/ShubhamSPawde"><box-icon name='github' type='logo'
+                                color='#ffffff'></box-icon></a></li>
+                    <li class="icons gm"><a href="#"><box-icon name='google' type='logo' color='#ffffff'></box-icon></a></li>
+                    <li class="icons x"><a href="#"><box-icon name='twitter' type='logo' color='#ffffff'></box-icon></a></li>
+                    <li class="icons yt"><a href="#"><box-icon name='youtube' type='logo' color='#ffffff'></box-icon></a></li>
+                    <li class="icons fb"><a href="#"><box-icon name='facebook' type='logo' color='#ffffff'></box-icon></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+
+    <script src="js/typing.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script>
+        var btnContainer = document.getElementById("myDIV");
+        var btns = btnContainer.getElementsByClassName("nav-items");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function (event) {
+                event.preventDefault();
+                var current = document.querySelector(".nav-items a.active");
+                if (current) {
+                    current.classList.remove("active");
+                }
+                this.querySelector("a").classList.add("active");
+            });
+        }
+    </script>
+
+</body>
+
+</html>
